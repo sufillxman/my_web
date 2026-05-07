@@ -64,6 +64,7 @@ TEMPLATES = [
 WSGI_APPLICATION = "portfolio_backend.wsgi.application"
 
 DB_ENGINE = config("DB_ENGINE", default="sqlite")
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 if DB_ENGINE == "sqlite":
     DATABASES = {
