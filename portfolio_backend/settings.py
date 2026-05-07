@@ -9,7 +9,7 @@ SECRET_KEY = config("SECRET_KEY")
 DEBUG = config("DEBUG", default=False, cast=bool)
 
 # Isko decouple se dynamic bana de
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1').split(',')
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1,.up.railway.app').split(',')
 
 
 INSTALLED_APPS = [
